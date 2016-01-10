@@ -1,0 +1,5 @@
+com.journaldev.mongodb.converter
+com.journaldev.mongodb.dao
+com.journaldev.mongodb.listener
+com.journaldev.mongodb.model
+com.journaldev.mongodb.servlets

@@ -17,7 +17,7 @@ public class MongoDBContextListener implements ServletContextListener {
 		MongoClient mongo = (MongoClient) sce.getServletContext()
 							.getAttribute("MONGO_CLIENT");
 		mongo.close();
-		System.out.println("MongoClient closed successfully");
+		System.out.println("MongoDBClient closed successfully");
 	}
 
 	@Override

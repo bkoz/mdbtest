@@ -32,7 +32,7 @@ public class MongoDBContextListener implements ServletContextListener {
 			System.out.println("MongoClient initialized successfully");
 			sce.getServletContext().setAttribute("MONGO_CLIENT", mongo);
 		} catch (UnknownHostException e) {
-			throw new RuntimeException("MongoClient init failed");
+			throw new RuntimeException("MongoDBClient init failed");
 		}
 	}
 

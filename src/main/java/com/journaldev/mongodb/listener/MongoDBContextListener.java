@@ -29,7 +29,7 @@ public class MongoDBContextListener implements ServletContextListener {
 					System.getenv("DB_PORT_27017_TCP_ADDR"),
 					Integer.parseInt(ctx.getInitParameter("MONGODB_PORT")));
 			System.out.println("DB_PORT_27017_TCP_ADDR = " + System.getenv("DB_PORT_27017_TCP_ADDR"));
-			System.out.println("MongoClient initialized successfully");
+			System.out.println("MongoDBClient initialized successfully");
 			sce.getServletContext().setAttribute("MONGO_CLIENT", mongo);
 		} catch (UnknownHostException e) {
 			throw new RuntimeException("MongoDBClient init failed");
